@@ -11,9 +11,9 @@ class ClienteController extends Controller
     public function listar()
     {
         //select * from cliente order by nome;
-        $clientes  = Cliente::orderBy('nome')->get();
+        $objCliente = Cliente::all();
 
-        return view('clientes')->with('clientes', $clientes);
+        return view('clientes')->with('clientes', $objCliente);
     }
 
     public function cadastrar()
