@@ -43,3 +43,21 @@ Route::post('/produto/salvar/{id}','App\Http\Controllers\ProdutoController@salva
 Route::get('/produto/editar/{id}','App\Http\Controllers\ProdutoController@editar');//editar cliente
 Route::get('/produto/deletar/{id}','App\Http\Controllers\ProdutoController@deletar');//deletar cliente
 Route::post('/produto/pesquisar','App\Http\Controllers\ProdutoController@pesquisar');
+
+//DONO
+
+Route::get('/dono','App\Http\Controllers\DonoController@listar');
+Route::get('/dono/cadastrar','App\Http\Controllers\DonoController@cadastrar');//chamar view clienteCadastrar
+Route::post('/dono/salvar/{id}','App\Http\Controllers\DonoController@salvar');//chama metodo salvar o cliente
+Route::get('/dono/editar/{id}','App\Http\Controllers\DonoController@editar');//editar cliente
+Route::get('/dono/deletar/{id}','App\Http\Controllers\DonoController@deletar');//deletar cliente
+Route::post('/dono/pesquisar','App\Http\Controllers\DonoController@pesquisar');
+
+//CACHORRO
+
+Route::get('/cachorro','App\Http\Controllers\CachorroController@listar');
+Route::get('/cachorro/cadastrar','App\Http\Controllers\CachorroController@cadastrar');//chamar view clienteCadastrar
+Route::post('/cachorro/salvar/{id}','App\Http\Controllers\CachorroController@salvar');//chama metodo salvar o cliente
+Route::get('/cachorro/editar/{id}','App\Http\Controllers\CachorroController@editar');//editar cliente
+Route::get('/cachorro/deletar/{id}','App\Http\Controllers\CachorroController@deletar');//deletar cliente
+Route::post('/cachorro/pesquisar','App\Http\Controllers\CachorroController@pesquisar');
