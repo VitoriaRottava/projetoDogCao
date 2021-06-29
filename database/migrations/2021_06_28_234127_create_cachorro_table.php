@@ -27,7 +27,6 @@ class CreateCachorroTable extends Migration
             $table->timestamps();
         });
     }
-
     /**
      * Reverse the migrations.
      *
