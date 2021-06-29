@@ -10,6 +10,6 @@ class Cachorro extends Model
 
     public function dono()
     {
-        return $this->hasMany(Dono::class,'id_dono', 'id');
+        return $this->hasMany(Dono::class,'id_dono');
     }
 }

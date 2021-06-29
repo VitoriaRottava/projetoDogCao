@@ -11,16 +11,17 @@ class CachorroController extends Controller
 {
     public function listar()
     {
-        //select * from cliente order by nome;
         $objCachorro = Cachorro::all();
 
         return view('cachorros')->with('cachorros', $objCachorro);
     }
 
     public function cadastrar()
-    {
-        return view('cachorroCadastrar');
-    }
+        {
+            $donos = Dono::all();
+
+            return view('cachorroCadastrar', compact('donos'));
+        }
 
     public function editar($id)
     {
