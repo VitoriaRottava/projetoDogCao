@@ -26,6 +26,7 @@ class CreateCachorroTable extends Migration
             $table->foreign('id_dono')->references('id')->on('dono')->onDelete('cascade');
             $table->timestamps();
         });
+    }
 
     /**
      * Reverse the migrations.
