@@ -23,13 +23,9 @@ class CreateCachorroTable extends Migration
             $table->string('cor',80);
             $table->string('shampoo_preferido',80);
             $table-> unsignedBigInteger('id_dono');
+            $table->foreign('id_dono')->references('id')->on('dono')->onDelete('cascade');
             $table->timestamps();
         });
-
-        Schema::table('cachorro', function (Blueprint $table) {
-
-            $table->foreign('id_dono')->references('id')->on('dono')->onDelete('cascade');
-        });}
 
     /**
      * Reverse the migrations.
