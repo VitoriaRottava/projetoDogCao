@@ -20,11 +20,11 @@ class Agenda extends Model
 
     public function funcionario()
     {
-        return $this->belongsTo(Produto::class,'id_funcionario');
+        return $this->belongsTo(Funcionario::class,'id_funcionario');
     }
 
     public function cachorro()
     {
-        return $this->belongsTo(Produto::class,'id_cachorro');
+        return $this->belongsTo(Cachorro::class,'id_cachorro');
     }
 }
