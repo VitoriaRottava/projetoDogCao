@@ -31,10 +31,13 @@
                         <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/funcionario">Funcionario</a>
+                        <a class="nav-link" href="/agenda">Agenda de Banhos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/produto">Produto</a>
+                        <a class="nav-link" href="/funcionario">Funcionários</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/produto">Produtos</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -42,8 +45,8 @@
                             Clientes
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="/cachorro">Cachorro</a>
-                            <a class="dropdown-item" href="/dono">Dono</a>
+                            <a class="dropdown-item" href="/cachorro">Cachorros</a>
+                            <a class="dropdown-item" href="/dono">Donos de cachorros</a>
                         </div>
                     </li>
                 </ul>

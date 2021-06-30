@@ -61,3 +61,12 @@ Route::post('/cachorro/salvar/{id}','App\Http\Controllers\CachorroController@sal
 Route::get('/cachorro/editar/{id}','App\Http\Controllers\CachorroController@editar');//editar cliente
 Route::get('/cachorro/deletar/{id}','App\Http\Controllers\CachorroController@deletar');//deletar cliente
 Route::post('/cachorro/pesquisar','App\Http\Controllers\CachorroController@pesquisar');
+
+//AGENDA DE BANHOS
+
+Route::get('/agenda','App\Http\Controllers\AgendaController@listar');
+Route::get('/agenda/cadastrar','App\Http\Controllers\AgendaController@cadastrar');//chamar view clienteCadastrar
+Route::post('/agenda/salvar/{id}','App\Http\Controllers\AgendaController@salvar');//chama metodo salvar o cliente
+Route::get('/agenda/editar/{id}','App\Http\Controllers\AgendaController@editar');//editar cliente
+Route::get('/agenda/deletar/{id}','App\Http\Controllers\AgendaController@deletar');//deletar cliente
+Route::post('/agenda/pesquisar','App\Http\Controllers\AgendaController@pesquisar');
