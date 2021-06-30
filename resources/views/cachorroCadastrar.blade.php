@@ -24,8 +24,13 @@
         <input type="text" name="idade"><br>
         <label>Cor</label><br>
         <input type="text" name="cor"><br>
-        <label>Shampoo preferido</label><br>
-        <input type="text" name="shampoo_preferido"><br>
+        <label>Produto preferido</label><br>
+        <select name="id_produto">
+            @foreach ($produtos as $item)
+            <option value="{{$item->id}}"> {{$item->nome}} </option>
+            @endforeach
+        </select>
+    <br>
         <label>Dono</label><br>
         <select name="id_dono">
             @foreach ($donos as $item)

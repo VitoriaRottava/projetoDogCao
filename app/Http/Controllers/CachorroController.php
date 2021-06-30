@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Cachorro;
 use App\Models\Dono;
+use App\Models\Produto;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -19,16 +20,19 @@ class CachorroController extends Controller
     public function cadastrar()
         {
             $donos = Dono::all();
+            $produtos = Produto::all();
 
-            return view('cachorroCadastrar', compact('donos'));
+            return view('cachorroCadastrar', compact('donos','produtos'));
         }
 
     public function editar($id)
     {
 
         $cachorro  = Cachorro::find($id);
+        $donos = Dono::all();
+        $produtos = Produto::all();
 
-        return view('cachorroEditar')->with('cachorro', $cachorro);
+        return view('cachorroEditar', compact('donos', 'cachorro', 'produtos'));
     }
 
     public function deletar($id)
@@ -72,24 +76,23 @@ class CachorroController extends Controller
             $cachorro->sexo = $request->input('sexo');
             $cachorro->idade = $request->input('idade');
             $cachorro->cor = $request->input('cor');
-            $cachorro->shampoo_preferido = $request->input('shampoo_preferido');
+            $cachorro->id_produto = $request->input('id_produto');
             $cachorro->id_dono = $request->input('id_dono');
 
-            // dd($cliente);
+           //  dd($cachorro);
             $cachorro->save();
 
             return redirect()->action('App\Http\Controllers\CachorroController@listar');
         } else {
             //select * from cliente where id = $id
             $cachorro = Cachorro::find($id);
-            $cachorro = new Cachorro();
             $cachorro->nome = $request->input('nome');
             $cachorro->porte = $request->input('porte');
             $cachorro->pelagem = $request->input('pelagem');
             $cachorro->sexo = $request->input('sexo');
             $cachorro->idade = $request->input('idade');
             $cachorro->cor = $request->input('cor');
-            $cachorro->shampoo_preferido = $request->input('shampoo_preferido');
+            $cachorro->id_produto = $request->input('id_produto');
             $cachorro->id_dono = $request->input('id_dono');
 
             $cachorro->save();

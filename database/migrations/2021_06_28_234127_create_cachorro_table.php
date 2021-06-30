@@ -21,7 +21,8 @@ class CreateCachorroTable extends Migration
             $table->string('sexo',20);
             $table->string('idade',40);
             $table->string('cor',80);
-            $table->string('shampoo_preferido',80);
+            $table->unsignedBigInteger('id_produto');
+            $table->foreign('id_produto')->references('id')->on('produto')->onDelete('cascade');
             $table-> unsignedBigInteger('id_dono');
             $table->foreign('id_dono')->references('id')->on('dono')->onDelete('cascade');
             $table->timestamps();

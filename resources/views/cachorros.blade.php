@@ -31,7 +31,7 @@
             <th>Sexo</th>
             <th>Idade</th>
             <th>Cor</th>
-            <th>Shampoo Preferido</th>
+            <th>Produto Preferido</th>
             <th>Dono</th>
             <th>Ações</th>
         </tr>
@@ -44,8 +44,10 @@
             <td>{{$item->sexo}}</td>
             <td>{{$item->idade}}</td>
             <td>{{$item->cor}}</td>
-            <td>{{$item->shampoo_preferido}}</td>
-            <td>{{$item->id_dono}}</td>
+            <td>{{$item->produto->nome}}</td>
+            <td>{{$item->dono->nome}}</td>
+
+{{-- dd($item->dono) --}}
 
             <td>
                 <a href="{{ action('App\Http\Controllers\CachorroController@editar',$item->id )}}"> Editar </a>

@@ -10,6 +10,11 @@ class Cachorro extends Model
 
     public function dono()
     {
-        return $this->hasMany(Dono::class,'id_dono');
+        return $this->belongsTo(Dono::class,'id_dono');
+    }
+
+    public function produto()
+    {
+        return $this->belongsTo(Produto::class,'id_produto');
     }
 }
