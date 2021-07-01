@@ -1,3 +1,9 @@
+falta:
+
+• arrumar a data de agenda pra q fique no padrão br
+
+• fazer uma tela home
+
 conceitos:
 
 • View + Blade + Controller; :heavy_check_mark:
@@ -12,14 +18,14 @@ conceitos:
 
 • Associar chave estrangeiras com tabelas em formulários e exibir nos grids (Tabela HTML); :heavy_check_mark:
 
-• Um bom Layout* com Bootstrap;
+• Um bom Layout* com Bootstrap; :heavy_check_mark:
 
 
 Critérios Avaliativos
 
 a) Código-fonte e arquivos organizados, a aplicação não deve apresentar erros durante o uso. 1.5 Ponto
 
-b) Um bom Layout* usando o Bootstrap – 1 Ponto
+b) Um bom Layout* usando o Bootstrap – 1 Ponto :heavy_check_mark:
 
 c) Sistema de Login – 0.5 Pontos
 
