@@ -9,36 +9,53 @@
 
 <body>
     @section('content')
+    <br><br>
     <form action="{{ action('App\Http\Controllers\CachorroController@salvar', 0) }}" method="post">
         <input type="hidden" name="_token" value="{{{ csrf_token() }}}">
-
+        <div class="form-row">
+            <div class="form-group col-md-6">
         <label>Nome</label><br>
-        <input type="text" name="nome"><br>
+        <input type="text" name="nome" class="form-control"><br>
+            </div>
+        <div class="form-group col-md-3">
         <label>Porte</label><br>
-        <input type="text" name="porte"><br>
+        <input type="text" name="porte" class="form-control"><br>
+        </div>
+        <div class="form-group col-md-3">
         <label>Pelagem</label><br>
-        <input type="text" name="pelagem"><br>
+        <input type="text" name="pelagem" class="form-control"><br>
+        </div></div>
+        <div class="form-row">
+        <div class="form-group col-md-4">
         <label>Sexo</label><br>
-        <input type="text" name="sexo"><br>
+        <input type="text" name="sexo" class="form-control"><br>
+        </div>
+        <div class="form-group col-md-4">
         <label>Idade</label><br>
-        <input type="text" name="idade"><br>
+        <input type="text" name="idade" class="form-control"><br>
+        </div>
+        <div class="form-group col-md-4">
         <label>Cor</label><br>
-        <input type="text" name="cor"><br>
+        <input type="text" name="cor" class="form-control"><br>
+        </div></div>
+        <div class="form-row">
+        <div class="form-group col-md-6">
         <label>Produto preferido</label><br>
-        <select name="id_produto">
+        <select name="id_produto" class="form-control">
             @foreach ($produtos as $item)
             <option value="{{$item->id}}"> {{$item->nome}} </option>
             @endforeach
         </select>
-    <br>
+    <br></div>
+        <div class="form-group col-md-6">
         <label>Dono</label><br>
-        <select name="id_dono">
+        <select name="id_dono" class="form-control">
             @foreach ($donos as $item)
             <option value="{{$item->id}}"> {{$item->nome}} </option>
             @endforeach
         </select>
-    <br>
-        <button type="submit" >Salvar</button>
+    <br></div></div>
+    <button type="submit" class="btn btn-success  btn-block"> <i class="fas fa-save"></i>   Salvar</button>
 
     </form>
 @endsection
