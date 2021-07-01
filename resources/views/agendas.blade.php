@@ -43,7 +43,7 @@
         <tr>
             <td>{{$item->id}}</td>
             <td>{{$item->titulo}}</td>
-            <td>{{$item->dia}}</td>
+            <td>{{$item->dia = date('d/m/Y')}}</td>
             <td>{{$item->hora}}</td>
             <td>{{$item->funcionario->nome}}</td>
             <td>{{$item->cachorro->nome}}</td>

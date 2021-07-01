@@ -1,6 +1,6 @@
 falta:
 
-• arrumar a data de agenda pra q fique no padrão br
+• arrumar a data de agenda pra q fique no padrão br :heavy_check_mark:
 
 • fazer uma tela home :heavy_check_mark:
 
