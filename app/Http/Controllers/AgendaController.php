@@ -57,15 +57,15 @@ class AgendaController extends Controller
 
     public function pesquisar(Request $request)
     {
-        $nome = $request->input('nome');
+        $titulo = $request->input('titulo');
 
         $query = DB::table('agenda');
 
-        if (!empty($nome)) {
-            $query->where('nome', 'like', '%' . $nome . '%');
+        if (!empty($titulo)) {
+            $query->where('titulo', 'like', '%' . $titulo . '%');
         }
 
-        $agendas = $query->orderBy('nome')->paginate(20);
+        $agendas = $query->orderBy('titulo')->paginate(20);
 
         return view('agendas')->with('agendas', $agendas);
     }

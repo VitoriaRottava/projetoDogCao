@@ -15,7 +15,7 @@
         <input type="hidden" name="_token" value="{{{ csrf_token() }}}">
         <div class="form-row">
             <div class="col-6">
-                <input type="text" class="form-control" placeholder="Digite o nome que deseja buscar" name="nome" id="">
+                <input type="text" class="form-control" placeholder="Digite o nome que deseja buscar" name="titulo" id="">
             </div>
             <div class="col-6">
                 <button type="submit" class="btn btn-primary"> <i class="fas fa-search"></i> Buscar</button>

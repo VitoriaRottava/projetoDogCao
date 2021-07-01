@@ -4,6 +4,8 @@ falta:
 
 • fazer uma tela home
 
+• arrumar erro que dá na busca de 'agenda de banhos' e 'cachorro'
+
 conceitos:
 
 • View + Blade + Controller; :heavy_check_mark:
