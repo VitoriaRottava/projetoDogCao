@@ -10,7 +10,7 @@
 <body>
     @section('content')
 
-<br><br>
+    <br><br> <br><br><br>
     <form action="{{ action('App\Http\Controllers\DonoController@pesquisar')}}" method="post">
         <input type="hidden" name="_token" value="{{{ csrf_token() }}}">
         <div class="form-row">

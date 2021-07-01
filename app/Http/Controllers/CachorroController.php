@@ -53,13 +53,9 @@ class CachorroController extends Controller
     {
         $nome = $request->input('nome');
 
-        $query = DB::table('cachorro');
-
-        if (!empty($nome)) {
-            $query->where('nome', 'like', '%' . $nome . '%');
-        }
-
-        $cachorros = $query->orderBy('nome')->paginate(20);
+        $cachorros = Cachorro::query()
+            ->where('nome', 'like', '%' . $nome . '%')
+            ->get();
 
         return view('cachorros')->with('cachorros', $cachorros);
     }

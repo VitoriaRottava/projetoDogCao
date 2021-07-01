@@ -2,9 +2,9 @@ falta:
 
 • arrumar a data de agenda pra q fique no padrão br
 
-• fazer uma tela home
+• fazer uma tela home :heavy_check_mark:
 
-• arrumar erro que dá na busca de 'agenda de banhos' e 'cachorro'
+• arrumar erro que dá na busca de 'agenda de banhos' e 'cachorro' :heavy_check_mark:
 
 • organizar as views em pasta (tipo, criar uma pasta 'cachorro' e colocar tds as views relacionadas ao cachorro)
 

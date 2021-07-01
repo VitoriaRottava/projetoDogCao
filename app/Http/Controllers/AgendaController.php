@@ -59,17 +59,12 @@ class AgendaController extends Controller
     {
         $titulo = $request->input('titulo');
 
-        $query = DB::table('agenda');
-
-        if (!empty($titulo)) {
-            $query->where('titulo', 'like', '%' . $titulo . '%');
-        }
-
-        $agendas = $query->orderBy('titulo')->paginate(20);
+        $agendas = Agenda::query()
+            ->where('titulo', 'like', '%' . $titulo . '%')
+            ->get();
 
         return view('agendas')->with('agendas', $agendas);
     }
-
 
     public function salvar(Request $request, $id)
     {

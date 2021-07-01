@@ -70,3 +70,8 @@ Route::post('/agenda/salvar/{id}','App\Http\Controllers\AgendaController@salvar'
 Route::get('/agenda/editar/{id}','App\Http\Controllers\AgendaController@editar');//editar cliente
 Route::get('/agenda/deletar/{id}','App\Http\Controllers\AgendaController@deletar');//deletar cliente
 Route::post('/agenda/pesquisar','App\Http\Controllers\AgendaController@pesquisar');
+
+//HOME
+Route::get('/home', function () {
+    return view('home');
+});
