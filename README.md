@@ -6,6 +6,8 @@ falta:
 
 • arrumar erro que dá na busca de 'agenda de banhos' e 'cachorro'
 
+• organizar as views em pasta (tipo, criar uma pasta 'cachorro' e colocar tds as views relacionadas ao cachorro)
+
 conceitos:
 
 • View + Blade + Controller; :heavy_check_mark:
