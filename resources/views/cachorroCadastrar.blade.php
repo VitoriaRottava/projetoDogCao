@@ -19,16 +19,16 @@
             </div>
         <div class="form-group col-md-3">
         <label>Porte</label><br>
-        <input type="text" name="porte" class="form-control"><br>
+        <input type="text" name="porte" class="form-control" placeholder="Pequeno/Médio/Grande"><br>
         </div>
         <div class="form-group col-md-3">
         <label>Pelagem</label><br>
-        <input type="text" name="pelagem" class="form-control"><br>
+        <input type="text" name="pelagem" class="form-control" placeholder="Curta/Média/Longa"><br>
         </div></div>
         <div class="form-row">
         <div class="form-group col-md-4">
         <label>Sexo</label><br>
-        <input type="text" name="sexo" class="form-control"><br>
+        <input type="text" name="sexo" class="form-control" placeholder="Masculino/Feminino"><br>
         </div>
         <div class="form-group col-md-4">
         <label>Idade</label><br>
