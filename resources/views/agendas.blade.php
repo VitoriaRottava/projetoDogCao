@@ -14,21 +14,19 @@
     <form action="{{ action('App\Http\Controllers\AgendaController@pesquisar')}}" method="post">
         <input type="hidden" name="_token" value="{{{ csrf_token() }}}">
         <div class="form-row">
-            <div class="col-3">
+            <div class="col-6">
                 <input type="text" class="form-control" placeholder="Digite o nome que deseja buscar" name="nome" id="">
             </div>
+            <div class="col-6">
                 <button type="submit" class="btn btn-primary"> <i class="fas fa-search"></i> Buscar</button>
-                <div class="col-3">
                     <a href="{{ url('/agenda/cadastrar') }}" class="btn btn-success"> <i class="fas fa-plus-circle"></i> Cadastrar Agenda de Banhos</a>
-                </div>
-            </div>
+            </div></div>
+    </form><br>
 
-    </form>
-
-    <table class="table table-hover">
+    <table class="table table-borderless">
         <thead>
-        <tr>
-            <th scope="col">ID</th>
+            <tr>
+            <th scope="col">#</th>
             <th scope="col">Título</th>
             <th scope="col">Dia</th>
             <th scope="col">Hora</th>
@@ -38,7 +36,6 @@
             <th scope="col">Dono do cachorro</th>
             <th scope="col">Preço</th>
             <th scope="col">Informações adicionais</th>
-            <th scope="col">Ações</th>
         </tr>
     </thead>
     <tbody>
@@ -57,7 +54,7 @@
 
             <td><a href="{{ action('App\Http\Controllers\AgendaController@editar',$item->id )}}" style='color:orange;' ><i class='fas fa-edit'></i>Editar</a> </td>
             <td><a href="{{ action('App\Http\Controllers\AgendaController@deletar',$item->id )}}"style='color:red;'><i class='fas fa-trash'></i>Deletar</a> </td>
-        </tr>
+ </tr>
 
         @endforeach
 
