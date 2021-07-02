@@ -24,7 +24,7 @@
         <div class="form-row">
             <div class="form-group col-md-6">
         <label>Nome</label><br>
-        <input type="text" name="nome" class="form-control" value="{{$cachorro->nome}}"><br>
+        <input type="text" placeholder="Mel" name="nome" class="form-control" value="{{$cachorro->nome}}"><br>
             </div>
             <div class="form-group col-md-3">
         <label>Porte</label><br>
@@ -41,11 +41,11 @@
             </div>
         <div class="form-group col-md-4">
         <label>Idade</label><br>
-        <input type="text" name="idade" class="form-control" value="{{$cachorro->idade}}"><br>
+        <input type="text" placeholder="2.5 anos" name="idade" class="form-control" value="{{ old ('idade') }}"><br>
         </div>
         <div class="form-group col-md-4">
         <label>Cor</label><br>
-        <input type="text" name="cor" class="form-control" value="{{$cachorro->cor}}"><br>
+        <input type="text" placeholder="Preto e branco" name="cor" class="form-control" value="{{ old ('cor') }}"><br>
         </div></div>
         <div class="form-row">
             <div class="form-group col-md-6">
