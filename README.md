@@ -1,12 +1,8 @@
 falta:
 
-• arrumar a data de agenda pra q fique no padrão br :heavy_check_mark:
-
-• fazer uma tela home :heavy_check_mark:
-
-• arrumar erro que dá na busca de 'agenda de banhos' e 'cachorro' :heavy_check_mark:
-
 • organizar as views em pasta (tipo, criar uma pasta 'cachorro' e colocar tds as views relacionadas ao cachorro)
+
+• ver sobre a autenticação dos selects, aquela parada de 2 option value
 
 conceitos:
 
@@ -35,7 +31,7 @@ c) Sistema de Login – 0.5 Pontos
 
 d) Três ou mais CRUDs incluindo o buscar em cada um – 2.5 Pontos :heavy_check_mark:
 
-e) Validação de todos os campos obrigatórios dos formulários do sistema. 1 Ponto
+e) Validação de todos os campos obrigatórios dos formulários do sistema. 1 Ponto :heavy_check_mark:
 
 f) Relacionamentos usando chaves estrangeiras em pelo menos dois CRUDs - 1 Ponto :heavy_check_mark:
 

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\SalvarFuncionario;
 use App\Models\Funcionario;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -59,7 +60,7 @@ class FuncionarioController extends Controller
     }
 
 
-    public function salvar(Request $request, $id)
+    public function salvar(SalvarFuncionario $request, $id)
     {
 
         if ($id == 0) {

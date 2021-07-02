@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\SalvarAgenda;
 use App\Models\Agenda;
 use App\Models\Cachorro;
 use App\Models\Dono;
@@ -66,7 +67,7 @@ class AgendaController extends Controller
         return view('agendas')->with('agendas', $agendas);
     }
 
-    public function salvar(Request $request, $id)
+    public function salvar(SalvarAgenda $request, $id)
     {
 
         if ($id == 0) {

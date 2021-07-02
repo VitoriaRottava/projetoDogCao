@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\SalvarCachorro;
 use App\Models\Cachorro;
 use App\Models\Dono;
 use App\Models\Produto;
@@ -61,7 +62,7 @@ class CachorroController extends Controller
     }
 
 
-    public function salvar(Request $request, $id)
+    public function salvar(SalvarCachorro $request, $id)
     {
 
         if ($id == 0) {

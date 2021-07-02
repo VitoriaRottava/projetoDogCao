@@ -10,20 +10,29 @@
 <body>
     @section('content')
     <br><br> <br><br><br>
+
+    @if ($errors->any())
+    <div class="alert alert-danger">
+        @foreach ($errors->all() as $error )
+            <p>{{$error}}</p>
+        @endforeach
+    </div>
+    @endif
+
     <form action="{{ action('App\Http\Controllers\AgendaController@salvar', 0) }}" method="post">
         <input type="hidden" name="_token" value="{{{ csrf_token() }}}">
         <div class="form-row">
             <div class="form-group col-md-6">
         <label>Título</label><br>
-        <input type="text" name="titulo" class="form-control"><br>
+        <input type="text" name="titulo" class="form-control" value="{{ old ('titulo') }}"><br>
             </div>
         <div class="form-group col-md-3">
         <label>Dia</label><br>
-        <input type="date" name="dia" class="form-control"><br>
+        <input type="date" name="dia" class="form-control" value="{{ old ('dia') }}"><br>
     </div>
         <div class="form-group col-md-3">
         <label>Hora</label><br>
-        <input type="time" name="hora" class="form-control"><br>
+        <input type="time" name="hora" class="form-control" value="{{ old ('hora') }}"><br>
     </div></div>
     <div class="form-row">
         <div class="form-group col-md-6">
@@ -62,11 +71,11 @@
     <div class="form-row">
         <div class="form-group col-md-6">
         <label>Preço</label><br>
-        <input type="text" name="preco" class="form-control" placeholder="R$---,--"><br>
+        <input type="text" name="preco" class="form-control" placeholder="R$---,--" value="{{ old ('preco') }}"><br>
         </div>
         <div class="form-group col-md-6">
         <label>Informações adicionais</label><br>
-        <input type="text" name="info" class="form-control" placeholder="Personalidade do cachorro, detalhe ou algum pedido especial"><br>
+        <input type="text" name="info" class="form-control" placeholder="Personalidade do cachorro, detalhe ou algum pedido especial" value="{{ old ('info') }}"><br>
         </div></div>
 
         <button type="submit" class="btn btn-success  btn-block"> <i class="fas fa-save"></i>   Salvar</button>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\SalvarDono;
 use App\Models\Dono;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -59,7 +60,7 @@ class DonoController extends Controller
     }
 
 
-    public function salvar(Request $request, $id)
+    public function salvar(SalvarDono $request, $id)
     {
 
         if ($id == 0) {

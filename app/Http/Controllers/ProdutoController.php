@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\SalvarProduto;
 use App\Models\Produto;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -59,7 +60,7 @@ class ProdutoController extends Controller
     }
 
 
-    public function salvar(Request $request, $id)
+    public function salvar(SalvarProduto $request, $id)
     {
 
         if ($id == 0) {

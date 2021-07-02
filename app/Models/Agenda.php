@@ -8,6 +8,7 @@ class Agenda extends Model
 {
     protected $table = "agenda";
 
+
     public function dono()
     {
         return $this->belongsTo(Dono::class,'id_dono');
