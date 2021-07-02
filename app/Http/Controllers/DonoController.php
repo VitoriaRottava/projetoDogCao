@@ -14,12 +14,12 @@ class DonoController extends Controller
         //select * from cliente order by nome;
         $objDono = Dono::all();
 
-        return view('donos')->with('donos', $objDono);
+        return view('dono/donos')->with('donos', $objDono);
     }
 
     public function cadastrar()
     {
-        return view('donoCadastrar');
+        return view('dono/donoCadastrar');
     }
 
     public function editar($id)
@@ -27,7 +27,7 @@ class DonoController extends Controller
 
         $dono  = Dono::find($id);
 
-        return view('donoEditar')->with('dono', $dono);
+        return view('dono/donoEditar')->with('dono', $dono);
     }
 
     public function deletar($id)
@@ -56,7 +56,7 @@ class DonoController extends Controller
 
         $donos = $query->orderBy('nome')->paginate(20);
 
-        return view('donos')->with('donos', $donos);
+        return view('dono/donos')->with('donos', $donos);
     }
 
 

@@ -14,12 +14,12 @@ class FuncionarioController extends Controller
         //select * from cliente order by nome;
         $objFuncionario = Funcionario::all();
 
-        return view('funcionarios')->with('funcionarios', $objFuncionario);
+        return view('funcionario/funcionarios')->with('funcionarios', $objFuncionario);
     }
 
     public function cadastrar()
     {
-        return view('funcionarioCadastrar');
+        return view('funcionario/funcionarioCadastrar');
     }
 
     public function editar($id)
@@ -27,7 +27,7 @@ class FuncionarioController extends Controller
 
         $funcionario  = Funcionario::find($id);
 
-        return view('funcionarioEditar')->with('funcionario', $funcionario);
+        return view('funcionario/funcionarioEditar')->with('funcionario', $funcionario);
     }
 
     public function deletar($id)
@@ -56,7 +56,7 @@ class FuncionarioController extends Controller
 
         $funcionarios = $query->orderBy('nome')->paginate(20);
 
-        return view('funcionarios')->with('funcionarios', $funcionarios);
+        return view('funcionario/funcionarios')->with('funcionarios', $funcionarios);
     }
 
 

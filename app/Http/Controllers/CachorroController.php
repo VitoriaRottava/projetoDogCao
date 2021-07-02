@@ -15,7 +15,7 @@ class CachorroController extends Controller
     {
         $objCachorro = Cachorro::all();
 
-        return view('cachorros')->with('cachorros', $objCachorro);
+        return view('cachorro/cachorros')->with('cachorros', $objCachorro);
     }
 
     public function cadastrar()
@@ -23,7 +23,7 @@ class CachorroController extends Controller
             $donos = Dono::all();
             $produtos = Produto::all();
 
-            return view('cachorroCadastrar', compact('donos','produtos'));
+            return view('cachorro/cachorroCadastrar', compact('donos','produtos'));
         }
 
     public function editar($id)
@@ -33,7 +33,7 @@ class CachorroController extends Controller
         $donos = Dono::all();
         $produtos = Produto::all();
 
-        return view('cachorroEditar', compact('donos', 'cachorro', 'produtos'));
+        return view('cachorro/cachorroEditar', compact('donos', 'cachorro', 'produtos'));
     }
 
     public function deletar($id)
@@ -58,7 +58,7 @@ class CachorroController extends Controller
             ->where('nome', 'like', '%' . $nome . '%')
             ->get();
 
-        return view('cachorros')->with('cachorros', $cachorros);
+        return view('cachorro/cachorros')->with('cachorros', $cachorros);
     }
 
 

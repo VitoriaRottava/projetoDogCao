@@ -14,12 +14,12 @@ class ProdutoController extends Controller
         //select * from cliente order by nome;
         $objProduto = Produto::all();
 
-        return view('produtos')->with('produtos', $objProduto);
+        return view('produto/produtos')->with('produtos', $objProduto);
     }
 
     public function cadastrar()
     {
-        return view('produtoCadastrar');
+        return view('produto/produtoCadastrar');
     }
 
     public function editar($id)
@@ -27,7 +27,7 @@ class ProdutoController extends Controller
 
         $produto  = Produto::find($id);
 
-        return view('produtoEditar')->with('produto', $produto);
+        return view('produto/produtoEditar')->with('produto', $produto);
     }
 
     public function deletar($id)
@@ -56,7 +56,7 @@ class ProdutoController extends Controller
 
         $produtos = $query->orderBy('nome')->paginate(20);
 
-        return view('produtos')->with('produtos', $produtos);
+        return view('produto/produtos')->with('produtos', $produtos);
     }
 
 

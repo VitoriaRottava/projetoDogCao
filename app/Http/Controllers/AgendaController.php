@@ -17,7 +17,7 @@ class AgendaController extends Controller
     {
         $objAgenda = Agenda::all();
 
-        return view('agendas')->with('agendas', $objAgenda);
+        return view('agenda/agendas')->with('agendas', $objAgenda);
     }
 
     public function cadastrar()
@@ -28,7 +28,7 @@ class AgendaController extends Controller
             $cachorros = Cachorro::all();
 
 
-            return view('agendaCadastrar', compact('donos','produtos','funcionarios', 'cachorros'));
+            return view('agenda/agendaCadastrar', compact('donos','produtos','funcionarios', 'cachorros'));
         }
 
     public function editar($id)
@@ -39,7 +39,7 @@ class AgendaController extends Controller
         $funcionarios = Funcionario::all();
         $cachorros = Cachorro::all();
 
-        return view('agendaEditar', compact('donos', 'agenda', 'produtos', 'funcionarios', 'cachorros'));
+        return view('agenda/agendaEditar', compact('donos', 'agenda', 'produtos', 'funcionarios', 'cachorros'));
     }
 
     public function deletar($id)
@@ -64,7 +64,7 @@ class AgendaController extends Controller
             ->where('titulo', 'like', '%' . $titulo . '%')
             ->get();
 
-        return view('agendas')->with('agendas', $agendas);
+        return view('agenda/agendas')->with('agendas', $agendas);
     }
 
     public function salvar(SalvarAgenda $request, $id)
