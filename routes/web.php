@@ -75,3 +75,7 @@ Route::post('/agenda/pesquisar','App\Http\Controllers\AgendaController@pesquisar
 Route::get('/home', function () {
     return view('home');
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
