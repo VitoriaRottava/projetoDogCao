@@ -1,6 +1,5 @@
 falta:
-
-• organizar as views em pasta (tipo, criar uma pasta 'cachorro' e colocar tds as views relacionadas ao cachorro)
+• pedir se todos os registros tem q ser pelo seeder
 
 • ver sobre a autenticação dos selects, aquela parada de 2 option value
 
@@ -27,7 +26,7 @@ a) Código-fonte e arquivos organizados, a aplicação não deve apresentar erro
 
 b) Um bom Layout* usando o Bootstrap – 1 Ponto :heavy_check_mark:
 
-c) Sistema de Login – 0.5 Pontos
+c) Sistema de Login – 0.5 Pontos :heavy_check_mark:
 
 d) Três ou mais CRUDs incluindo o buscar em cada um – 2.5 Pontos :heavy_check_mark:
 
