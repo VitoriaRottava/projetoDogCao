@@ -1,4 +1,5 @@
 falta:
+
 • pedir se todos os registros tem q ser pelo seeder
 
 • ver sobre a autenticação dos selects, aquela parada de 2 option value
