@@ -24,7 +24,7 @@ class SalvarCachorro extends FormRequest
     public function rules()
     {
         return [
-                'titulo' => 'required|min:2|max:40',
+                'nome' => 'required|min:2|max:40',
                 'porte' => 'required|min:5|max:20',
                 'pelagem' => 'required|min:5|max:50',
                 'sexo' => 'required|min:8|max:20',
