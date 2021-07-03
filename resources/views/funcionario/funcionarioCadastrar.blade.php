@@ -1,4 +1,3 @@
-
 @extends('layouts.app')
 
 @section('title', 'Cadastro de Funcionários')
@@ -46,6 +45,7 @@
         <label>Email</label><br>
         <input type="text" name="email" class="form-control" value="{{ old ('email') }}"><br>
             </div></div>
+
             <button type="submit" class="btn btn-success  btn-block"> <i class="fas fa-save"></i>   Salvar</button>
 
     </form>

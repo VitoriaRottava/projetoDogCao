@@ -49,8 +49,6 @@
             <td>{{$item->produto->nome}}</td>
             <td>{{$item->dono->nome}}</td>
 
-{{-- dd($item->dono) --}}
-
             <td><a href="{{ action('App\Http\Controllers\CachorroController@editar',$item->id )}}" style='color:orange;' ><i class='fas fa-edit'></i>Editar</a> </td>
             <td><a href="{{ action('App\Http\Controllers\CachorroController@deletar',$item->id )}}"style='color:red;'><i class='fas fa-trash'></i>Deletar</a> </td>
      </tr>

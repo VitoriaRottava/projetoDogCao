@@ -11,7 +11,6 @@ class ProdutoController extends Controller
 {
     public function listar()
     {
-        //select * from cliente order by nome;
         $objProduto = Produto::all();
 
         return view('produto/produtos')->with('produtos', $objProduto);
@@ -32,13 +31,11 @@ class ProdutoController extends Controller
 
     public function deletar($id)
     {
-        //select * from cliente where id = $id
         $produto  = Produto::find($id);
 
         if (empty($produto)) {
             return "<h2>Erro ao consultar o id informado</h2>";
         }
-        //delete from cliente where id = $id
         $produto->delete();
 
         return redirect()->action('App\Http\Controllers\ProdutoController@listar');
@@ -70,12 +67,10 @@ class ProdutoController extends Controller
             $produto->qtd_estoque = $request->input('qtd_estoque');
             $produto->custo = $request->input('custo');
 
-            // dd($cliente);
             $produto->save();
 
             return redirect()->action('App\Http\Controllers\ProdutoController@listar');
         } else {
-            //select * from cliente where id = $id
             $produto = Produto::find($id);
             $produto->nome = $request->input('nome');
             $produto->marca = $request->input('marca');

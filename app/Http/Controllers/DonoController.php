@@ -11,7 +11,6 @@ class DonoController extends Controller
 {
     public function listar()
     {
-        //select * from cliente order by nome;
         $objDono = Dono::all();
 
         return view('dono/donos')->with('donos', $objDono);
@@ -24,7 +23,6 @@ class DonoController extends Controller
 
     public function editar($id)
     {
-
         $dono  = Dono::find($id);
 
         return view('dono/donoEditar')->with('dono', $dono);
@@ -32,13 +30,11 @@ class DonoController extends Controller
 
     public function deletar($id)
     {
-        //select * from cliente where id = $id
         $dono  = Dono::find($id);
 
         if (empty($dono)) {
             return "<h2>Erro ao consultar o id informado</h2>";
         }
-        //delete from cliente where id = $id
         $dono->delete();
 
         return redirect()->action('App\Http\Controllers\DonoController@listar');
@@ -71,13 +67,11 @@ class DonoController extends Controller
             $dono->email = $request->input('email');
             $dono->endereco = $request->input('endereco');
 
-
-            // dd($cliente);
             $dono->save();
 
             return redirect()->action('App\Http\Controllers\DonoController@listar');
         } else {
-            //select * from cliente where id = $id
+
             $dono = Dono::find($id);
             $dono->nome = $request->input('nome');
             $dono->cpf = $request->input('cpf');

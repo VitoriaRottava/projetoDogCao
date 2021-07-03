@@ -11,7 +11,6 @@ class FuncionarioController extends Controller
 {
     public function listar()
     {
-        //select * from cliente order by nome;
         $objFuncionario = Funcionario::all();
 
         return view('funcionario/funcionarios')->with('funcionarios', $objFuncionario);
@@ -32,13 +31,11 @@ class FuncionarioController extends Controller
 
     public function deletar($id)
     {
-        //select * from cliente where id = $id
         $funcionario  = Funcionario::find($id);
 
         if (empty($funcionario)) {
             return "<h2>Erro ao consultar o id informado</h2>";
         }
-        //delete from cliente where id = $id
         $funcionario->delete();
 
         return redirect()->action('App\Http\Controllers\FuncionarioController@listar');
@@ -71,12 +68,10 @@ class FuncionarioController extends Controller
             $funcionario->telefone = $request->input('telefone');
             $funcionario->email = $request->input('email');
 
-            // dd($cliente);
             $funcionario->save();
 
             return redirect()->action('App\Http\Controllers\FuncionarioController@listar');
         } else {
-            //select * from cliente where id = $id
             $funcionario = Funcionario::find($id);
             $funcionario->nome = $request->input('nome');
             $funcionario->cpf = $request->input('cpf');

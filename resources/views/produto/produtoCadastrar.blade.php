@@ -1,4 +1,3 @@
-
 @extends('layouts.app')
 
 @section('title', 'Cadastro de Produtos')
@@ -9,6 +8,7 @@
 @endsection
 
 <body>
+
     @section('content')
     <br><br> <br><br><br>
 

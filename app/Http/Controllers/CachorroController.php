@@ -38,13 +38,11 @@ class CachorroController extends Controller
 
     public function deletar($id)
     {
-        //select * from cliente where id = $id
         $cachorro  = Cachorro::find($id);
 
         if (empty($cachorro)) {
             return "<h2>Erro ao consultar o id informado</h2>";
         }
-        //delete from cliente where id = $id
         $cachorro->delete();
 
         return redirect()->action('App\Http\Controllers\CachorroController@listar');
@@ -76,12 +74,10 @@ class CachorroController extends Controller
             $cachorro->id_produto = $request->input('id_produto');
             $cachorro->id_dono = $request->input('id_dono');
 
-           //  dd($cachorro);
             $cachorro->save();
 
             return redirect()->action('App\Http\Controllers\CachorroController@listar');
         } else {
-            //select * from cliente where id = $id
             $cachorro = Cachorro::find($id);
             $cachorro->nome = $request->input('nome');
             $cachorro->porte = $request->input('porte');

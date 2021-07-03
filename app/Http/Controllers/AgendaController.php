@@ -44,13 +44,11 @@ class AgendaController extends Controller
 
     public function deletar($id)
     {
-        //select * from cliente where id = $id
         $agenda  = Agenda::find($id);
 
         if (empty($agenda)) {
             return "<h2>Erro ao consultar o id informado</h2>";
         }
-        //delete from cliente where id = $id
         $agenda->delete();
 
         return redirect()->action('App\Http\Controllers\AgendaController@listar');
@@ -82,12 +80,10 @@ class AgendaController extends Controller
             $agenda->preco = $request->input('preco');
             $agenda->info = $request->input('info');
 
-           //  dd($cachorro);
             $agenda->save();
 
             return redirect()->action('App\Http\Controllers\AgendaController@listar');
         } else {
-            //select * from cliente where id = $id
             $agenda = Agenda::find($id);
             $agenda->titulo = $request->input('titulo');
             $agenda->dia = $request->input('dia');
