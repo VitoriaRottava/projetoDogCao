@@ -17,10 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('pdfDog', 'App\Http\Controllers\PdfDogController@geraPdf');
-
-Route::get('pdfAgenda', 'App\Http\Controllers\PdfAgendaController@geraPdf');
-
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -72,5 +68,10 @@ Route::get('/agenda/editar/{id}','App\Http\Controllers\AgendaController@editar')
 Route::get('/agenda/deletar/{id}','App\Http\Controllers\AgendaController@deletar');
 Route::post('/agenda/pesquisar','App\Http\Controllers\AgendaController@pesquisar');
 
+//PDFS
+
+Route::get('pdfDog', 'App\Http\Controllers\PdfDogController@geraPdf');
+
+Route::get('pdfAgenda', 'App\Http\Controllers\PdfAgendaController@geraPdf');
 
 });
