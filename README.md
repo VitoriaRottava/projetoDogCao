@@ -6,6 +6,8 @@ falta:
 
 • arrumar o navbar com a logo
 
+• trocar a imagem dos pdfs pela logo final
+
 • pedir se todos os registros tem q ser pelo seeder
 
 • ver sobre a autenticação dos selects, aquela parada de 2 option value
@@ -45,9 +47,9 @@ i. Em formulários trazer em dados através das tags Selects; :heavy_check_mark:
 
 ii. Na listagem, invés mostrar o id, mostrar o nome do atributo da chave estrangeira; :heavy_check_mark:
 
-g) O sistema deve gerar 2 relatórios em PDF - Exemplo Prático – 1 Ponto
+g) O sistema deve gerar 2 relatórios em PDF - Exemplo Prático – 1 Ponto :heavy_check_mark:
 
-i. Gerar relatórios de listagem de dados;
+i. Gerar relatórios de listagem de dados; :heavy_check_mark:
 
 h) Gravação de um vídeo* com no mínimo 6 e máximo de 10 minutos apresentando a aplicação e o código-fonte, com
 uma ótima qualidade (código-fonte legível) e som audível. 1,5 Ponto

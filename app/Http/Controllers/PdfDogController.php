@@ -2,18 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Agenda;
 use App\Models\Cachorro;
 use Illuminate\Http\Request;
 use PDF;
 
-class PdfController extends Controller
+class PdfDogController extends Controller
 {
     public function geraPdf (){
         $cachorro = Cachorro::all();
 
-        $pdf = PDF::loadView('pdf', compact ('cachorro'));
+        $pdfDog = PDF::loadView('pdfDog', compact ('cachorro'));
 
-        return $pdf->setPaper('a4')->stream('cachorros.pdf');
+        return $pdfDog->setPaper('a4')->stream('cachorros.pdf');
     }
 }

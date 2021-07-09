@@ -19,7 +19,7 @@
             <div class="col-6">
                 <button type="submit" class="btn btn-primary"> <i class="fas fa-search"></i> Buscar</button>
                     <a href="{{ url('/cachorro/cadastrar') }}" class="btn btn-success"> <i class="fas fa-plus-circle"></i> Cadastrar Cachorro</a>
-                    <a href="{{ url('/pdf') }}" class="btn btn-danger"> <i class="fas fa-file-pdf"></i> Gerar pdf</a>
+                    <a href="{{ url('/pdfDog') }}" class="btn btn-danger" style="background-color: #b40505;"><i class="fas fa-file-pdf"></i> Gerar pdf</a>
 
                 </div></div>
     </form><br>

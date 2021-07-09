@@ -18,7 +18,7 @@
 
 <body>
     @section('sidebar')
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #fff9e0;">
         <a class="navbar-brand" href="/home">Petshop LavaCão
             <img src="https://comofazeremcasa.net/wp-content/uploads/2020/04/desenhos-de-cachorrinhos-para-colorir-2.jpg
             " width="30" height="30" alt="">

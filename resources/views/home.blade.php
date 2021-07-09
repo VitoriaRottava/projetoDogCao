@@ -56,7 +56,7 @@
       <img class="card-img-top" src="https://meupet.elanco.com/sites/g/files/adhwdz661/files/styles/paragraph_image/public/2020-04/bpc-48_-_filhotes.jpg?itok=A-H2qFJ7"  height=180px alt="Imagem de capa do card">
       <div class="card-body">
         <h5 class="card-title">Cachorros</h5>
-        <p class="card-text">Os cachorros são o motivo para nosso pet shop existir. Enquanto a equipe cuida bem deles durante o atendimento, cuide bem dos dados deles.</p>
+        <p class="card-text">Os cachorros são o motivo para nosso pet shop existir. Enquanto a equipe cuida bem deles durante o atendimento, fique responsável por cuidar bem dos seus dAUdos.</p>
       </div>
       <div class="card-footer">
         <small class="text-muted"><a href="/cachorro" class="btn btn-dark  btn-block"> Ver</a></small>

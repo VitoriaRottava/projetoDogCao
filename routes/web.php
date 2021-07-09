@@ -17,7 +17,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('pdf', 'App\Http\Controllers\PdfController@geraPdf');
+Route::get('pdfDog', 'App\Http\Controllers\PdfDogController@geraPdf');
+
+Route::get('pdfAgenda', 'App\Http\Controllers\PdfAgendaController@geraPdf');
 
 Auth::routes();
 
