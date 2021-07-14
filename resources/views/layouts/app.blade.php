@@ -18,10 +18,8 @@
 
 <body>
     @section('sidebar')
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #fff9e0;">
-        <a class="navbar-brand" href="/home">Petshop LavaCão
-            <img src="https://comofazeremcasa.net/wp-content/uploads/2020/04/desenhos-de-cachorrinhos-para-colorir-2.jpg
-            " width="30" height="30" alt="">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #c0d4ac;">
+        <a class="navbar-brand" href="/home"><img src="https://uploaddeimagens.com.br/images/003/335/177/full/LOGO_LAVACAO_NO_BG.png?1626290976" width="110" height="30" alt="">
     </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
                 aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">

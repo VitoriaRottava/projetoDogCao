@@ -15,7 +15,7 @@
         <p class="card-text">O pet shop LavaCão possui vários tipos de banhos, cada qual com seu respectivo preço. Além disso, é necessário informar o dia e o horário que o atendimento está marcado, para que seja possível a organização da agenda.</p>
       </div>
       <div class="card-footer">
-        <small class="text-muted"><a href="/agenda" class="btn btn-dark  btn-block"> Ver</a></small>
+        <small class="text-muted"><a href="/agenda" class="btn btn-light  btn-block" style="background-color: #a1c181;"> Ver</a></small>
       </div>
     </div>
     <div class="card">
@@ -25,7 +25,7 @@
         <p class="card-text">A equipe de funcionários do pet shop LavaCão é muito competente, além de amar o que faz. É importante manter todos os dados da equipe atualizados, bem como cadastrar novos contratados.</p>
       </div>
       <div class="card-footer">
-        <small class="text-muted"><a href="/funcionario" class="btn btn-dark  btn-block"> Ver</a></small>
+        <small class="text-muted"><a href="/funcionario" class="btn btn-light  btn-block" style="background-color: #fe7f2d;"> Ver</a></small>
         </small>
       </div>
     </div>
@@ -36,7 +36,7 @@
         <p class="card-text">O pet shop LavaCão possui uma grande variedade de produtos para melhor atender nossos clientes patudos. Mantenha os produtos atualizados e preste atenção no controle de estoque. </p>
       </div>
       <div class="card-footer">
-        <small class="text-muted"><a href="/produto" class="btn btn-dark  btn-block"> Ver</a></small>
+        <small class="text-muted"><a href="/produto" class="btn btn-light  btn-block" style="background-color: #a1c181;"> Ver</a></small>
         </div>
     </div>
   </div>
@@ -49,7 +49,7 @@
         <p class="card-text">Toda a equipe do pet shop LavaCão sabe o quanto os nossos clientes patudos são amados pelos seus donos. Para que possamos melhor cuidar dos cachorros, mantenha os dados dos seus respectivos donos atualizados.</p>
       </div>
       <div class="card-footer">
-        <small class="text-muted"><a href="/dono" class="btn btn-dark  btn-block"> Ver</a></small>
+        <small class="text-muted"><a href="/dono" class="btn btn-light  btn-block" style="background-color: #fe7f2d;"> Ver</a></small>
       </div>
     </div>
     <div class="card">
@@ -59,7 +59,7 @@
         <p class="card-text">Os cachorros são o motivo para nosso pet shop existir. Enquanto a equipe cuida bem deles durante o atendimento, fique responsável por cuidar bem dos seus dAUdos.</p>
       </div>
       <div class="card-footer">
-        <small class="text-muted"><a href="/cachorro" class="btn btn-dark  btn-block"> Ver</a></small>
+        <small class="text-muted"><a href="/cachorro" class="btn btn-light  btn-block" style="background-color: #a1c181;"> Ver</a></small>
         </small>
       </div>
     </div>

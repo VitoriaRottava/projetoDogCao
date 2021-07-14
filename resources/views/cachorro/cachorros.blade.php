@@ -19,7 +19,7 @@
             <div class="col-6">
                 <button type="submit" class="btn btn-primary"> <i class="fas fa-search"></i> Buscar</button>
                     <a href="{{ url('/cachorro/cadastrar') }}" class="btn btn-success"> <i class="fas fa-plus-circle"></i> Cadastrar Cachorro</a>
-                    <a href="{{ url('/pdfDog') }}" class="btn btn-danger" style="background-color: #b40505;"><i class="fas fa-file-pdf"></i> Gerar pdf</a>
+                    <a href="{{ url('/pdfDog') }}" class="btn btn-danger" style="background-color: #b40505;"><i class="fas fa-file-pdf"></i> Gerar relatório em PDF</a>
 
                 </div></div>
     </form><br>
@@ -51,8 +51,8 @@
             <td>{{$item->produto->nome}}</td>
             <td>{{$item->dono->nome}}</td>
 
-            <td><a href="{{ action('App\Http\Controllers\CachorroController@editar',$item->id )}}" style='color:orange;' ><i class='fas fa-edit'></i>Editar</a> </td>
-            <td><a href="{{ action('App\Http\Controllers\CachorroController@deletar',$item->id )}}"style='color:red;'><i class='fas fa-trash'></i>Deletar</a> </td>
+            <td><a href="{{ action('App\Http\Controllers\CachorroController@editar',$item->id )}}" style='color:orange;' ><i class='fas fa-edit'></i>   Editar</a> </td>
+            <td><a href="{{ action('App\Http\Controllers\CachorroController@deletar',$item->id )}}"style='color:red;'><i class='fas fa-trash'></i>   Deletar</a> </td>
      </tr>
 
         @endforeach

@@ -7,19 +7,19 @@
     <title>PDF da listagem da agenda </title>
 </head>
 <body>
-    <h1>Listagem da agenda de atendimentos cadastrados no sistema do Pet Shop LavaCão <img src="https://comofazeremcasa.net/wp-content/uploads/2020/04/desenhos-de-cachorrinhos-para-colorir-2.jpg
-        " width="30" height="30" alt=""></h1><br>
+    <h1>Listagem da agenda de atendimentos cadastrados no sistema do <img src="https://uploaddeimagens.com.br/images/003/335/177/full/LOGO_LAVACAO_NO_BG.png?1626290976" width="100" height="30" alt=""></h1>
 
     @foreach ($agenda as $agendas)<br>
-        <h2>Título do atendimento: {{$agendas->titulo}}</h2>
-        <h2>Dia: {{$agendas->dia = date('d/m/Y')}}</h2>
-        <h2>Horário: {{$agendas->hora}}</h2>
-        <h2>Funcionário responsável: {{$agendas->funcionario->nome}}</h2>
-        <h2>Cachorro: {{$agendas->cachorro->nome}}</h2>
-        <h2>Produto que será usado: {{$agendas->produto->nome}}</h2>
-        <h2>Dono do cachorro: {{$agendas->dono->nome}}</h2>
-        <h2>Preço: {{$agendas->preco}}</h2>
-        <h2>Informações adicionais: {{$agendas->info}}</h2>
+        <h4>ID: {{$agendas->id}}</h4>
+        <h4>Título do atendimento: {{$agendas->titulo}}</h4>
+        <h4>Dia: {{$agendas->dia = date('d/m/Y')}}</h4>
+        <h4>Horário: {{$agendas->hora}}</h4>
+        <h4>Funcionário responsável: {{$agendas->funcionario->nome}}</h4>
+        <h4>Cachorro: {{$agendas->cachorro->nome}}</h4>
+        <h4>Produto que será usado: {{$agendas->produto->nome}}</h4>
+        <h4>Dono do cachorro: {{$agendas->dono->nome}}</h4>
+        <h4>Preço: {{$agendas->preco}}</h4>
+        <h4>Informações adicionais: {{$agendas->info}}</h4>
 
     @endforeach
 </body>

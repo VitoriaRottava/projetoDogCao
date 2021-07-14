@@ -41,11 +41,11 @@
             </div>
         <div class="form-group col-md-4">
         <label>Idade</label><br>
-        <input type="text" placeholder="2.5 anos" name="idade" class="form-control" value="{{ old ('idade') }}"><br>
+        <input type="text" placeholder="2.5 anos" name="idade" class="form-control" value="{{$cachorro->idade}}"><br>
         </div>
         <div class="form-group col-md-4">
         <label>Cor</label><br>
-        <input type="text" placeholder="Preto e branco" name="cor" class="form-control" value="{{ old ('cor') }}"><br>
+        <input type="text" placeholder="Preto e branco" name="cor" class="form-control" value="{{$cachorro->cor}}"><br>
         </div></div>
         <div class="form-row">
             <div class="form-group col-md-6">
