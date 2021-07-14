@@ -4,10 +4,6 @@ falta:
 
 • arrumar a organização dos cards da home
 
-• arrumar o navbar com a logo
-
-• trocar a imagem dos pdfs pela logo final
-
 • pedir se todos os registros tem q ser pelo seeder
 
 • ver sobre a autenticação dos selects, aquela parada de 2 option value
