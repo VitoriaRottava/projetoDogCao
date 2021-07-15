@@ -1,8 +1,6 @@
 falta:
 
-• fazer uma welcome 
-
-• arrumar a organização dos cards da home
+• eloquent
 
 • pedir se todos os registros tem q ser pelo seeder
 

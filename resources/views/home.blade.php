@@ -41,8 +41,8 @@
     </div>
   </div>
 <br><br>
-<div class="card-deck">
-    <div class="card">
+<div class="card-deck" style="justify-content: center; margin-bottom: 50px">
+    <div class="card" style="max-width: 348px">
         <img class="card-img-top" src="https://static.vix.com/pt/sites/default/files/c/cachorro-lambendo-dono-0217-1400x800.jpg"  height=180px alt="Imagem de capa do card">
         <div class="card-body">
         <h5 class="card-title">Donos dos cachorros</h5>
@@ -52,7 +52,7 @@
         <small class="text-muted"><a href="/dono" class="btn btn-light  btn-block" style="background-color: #fe7f2d;"> Ver</a></small>
       </div>
     </div>
-    <div class="card">
+    <div class="card" style="max-width: 348px">
       <img class="card-img-top" src="https://meupet.elanco.com/sites/g/files/adhwdz661/files/styles/paragraph_image/public/2020-04/bpc-48_-_filhotes.jpg?itok=A-H2qFJ7"  height=180px alt="Imagem de capa do card">
       <div class="card-body">
         <h5 class="card-title">Cachorros</h5>
@@ -63,16 +63,7 @@
         </small>
       </div>
     </div>
-    <div class="card">
-      <img class="card-img-top" src="https://br.bolavip.com/export/sites/bolavip/img/2021/06/19/gremio-2.jpg_657093033.jpg" height=180px alt="Imagem de capa do card">
-      <div class="card-body">
-        <h5 class="card-title">apaga delete exclói</h5>
-        <p class="card-text"></p>
-      </div>
-      <div class="card-footer">
-        <small class="text-muted"><a href="/home" class="btn btn-dark  btn-block"> Ver</a></small>
-        </div>
-    </div>
+
   </div>
 
   @endsection
