@@ -19,12 +19,12 @@
             <div class="col-6">
                 <button type="submit" class="btn btn-primary"> <i class="fas fa-search"></i> Buscar</button>
                     <a href="{{ url('/cachorro/cadastrar') }}" class="btn btn-success"> <i class="fas fa-plus-circle"></i> Cadastrar Cachorro</a>
-                    <a href="{{ url('/pdfDog') }}" class="btn btn-danger" style="background-color: #b40505;"><i class="fas fa-file-pdf"></i> Gerar relatório em PDF</a>
+                    <a href="{{ url('/pdfDog') }}" class="btn btn-danger" style="background-color: #b40505;"><i class="fas fa-file-pdf"></i> Gerar PDF</a>
 
                 </div></div>
     </form><br>
-
-    <table class="table table-borderless">
+    <div class="table-responsive">
+    <table class="table">
         <thead>
             <tr>
                 <th scope="col">#</th>
@@ -36,6 +36,8 @@
                 <th scope="col">Cor</th>
                 <th scope="col">Produto Preferido</th>
                 <th scope="col">Dono</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
         </tr>
     </thead>
     <tbody>
@@ -58,4 +60,5 @@
         @endforeach
 
     </table>
+    </div>
     @endsection

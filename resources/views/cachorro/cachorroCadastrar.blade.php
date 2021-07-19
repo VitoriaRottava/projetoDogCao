@@ -51,6 +51,7 @@
         <div class="form-group col-md-6">
         <label>Produto preferido</label><br>
         <select name="id_produto" class="form-control" value="{{ old ('id_produto') }}">
+            <option value="Selecione uma opção" disabled selected >Selecione uma opção</option>
             @foreach ($produtos as $item)
             <option value="{{$item->id}}"> {{$item->nome}} </option>
             @endforeach
@@ -59,6 +60,7 @@
         <div class="form-group col-md-6">
         <label>Dono</label><br>
         <select name="id_dono" class="form-control" value="{{ old ('id_dono') }}">
+        <option value="Selecione uma opção" disabled selected >Selecione uma opção</option>
             @foreach ($donos as $item)
             <option value="{{$item->id}}"> {{$item->nome}} </option>
             @endforeach
