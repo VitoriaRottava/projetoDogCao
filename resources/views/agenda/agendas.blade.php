@@ -19,7 +19,7 @@
             </div>
             <div class="col-6">
             <button type="submit" class="btn btn-primary"> <i class="fas fa-search"></i> Buscar</button>
-                    <a href="{{ url('/cachorro/cadastrar') }}" class="btn btn-success"> <i class="fas fa-plus-circle"></i> Cadastrar Cachorro</a>
+            <a href="{{ url('/agenda/cadastrar') }}" class="btn btn-success"> <i class="fas fa-plus-circle"></i> Cadastrar Agenda de Banhos</a>
                     <a href="{{ url('/pdfAgenda') }}" class="btn btn-danger" style="background-color: #b40505;"><i class="fas fa-file-pdf"></i> Gerar relatório em PDF</a>
 
                 </div></div>

@@ -7,20 +7,21 @@
     <title>PDF da listagem da agenda </title>
 </head>
 <body>
-    <h1>Listagem da agenda de atendimentos cadastrados no sistema do <img src="https://uploaddeimagens.com.br/images/003/335/177/full/LOGO_LAVACAO_NO_BG.png?1626290976" width="100" height="30" alt=""></h1>
+<img src="https://uploaddeimagens.com.br/images/003/335/177/full/LOGO_LAVACAO_NO_BG.png?1626290976" width="100" height="30" alt="">
+    <h1>Listagem da agenda de atendimentos cadastrados no sistema do LavaCão</h1>
 
     @foreach ($agenda as $agendas)<br>
-        <h4>ID: {{$agendas->id}}</h4>
-        <h4>Título do atendimento: {{$agendas->titulo}}</h4>
-        <h4>Dia: {{$agendas->dia = date('d/m/Y')}}</h4>
-        <h4>Horário: {{$agendas->hora}}</h4>
-        <h4>Funcionário responsável: {{$agendas->funcionario->nome}}</h4>
-        <h4>Cachorro: {{$agendas->cachorro->nome}}</h4>
-        <h4>Produto que será usado: {{$agendas->produto->nome}}</h4>
-        <h4>Dono do cachorro: {{$agendas->dono->nome}}</h4>
-        <h4>Preço: {{$agendas->preco}}</h4>
-        <h4>Informações adicionais: {{$agendas->info}}</h4>
-
+        <p><strong>ID: {{$agendas->id}}</strong>
+        <br>Título do atendimento: {{$agendas->titulo}}
+        <br>Dia: {{$agendas->dia = date('d/m/Y')}}
+        <br>Horário: {{$agendas->hora}}
+        <br>Funcionário responsável: {{$agendas->funcionario->nome}}
+        <br>Cachorro: {{$agendas->cachorro->nome}}
+        <br>Produto que será usado: {{$agendas->produto->nome}}
+        <br>Dono do cachorro: {{$agendas->dono->nome}}</p>
+        <br>Preço: {{$agendas->preco}}</p>
+        <br>Informações adicionais: {{$agendas->info}}</p>        
+        <hr>
     @endforeach
 </body>
 </html>
