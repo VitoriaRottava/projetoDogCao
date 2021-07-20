@@ -13,10 +13,10 @@
     <form action="{{ action('App\Http\Controllers\CachorroController@pesquisar')}}" method="post">
         <input type="hidden" name="_token" value="{{{ csrf_token() }}}">
         <div class="form-row">
-            <div class="col-6">
+            <div class="col-4">
                 <input type="text" class="form-control" placeholder="Digite o nome que deseja buscar" name="nome" id="">
             </div>
-            <div class="col-6">
+            <div class="col-8">
                 <button type="submit" class="btn btn-primary"> <i class="fas fa-search"></i> Buscar</button>
                     <a href="{{ url('/cachorro/cadastrar') }}" class="btn btn-success"> <i class="fas fa-plus-circle"></i> Cadastrar Cachorro</a>
                     <a href="{{ url('/pdfDog') }}" class="btn btn-danger" style="background-color: #b40505;"><i class="fas fa-file-pdf"></i> Gerar PDF</a>

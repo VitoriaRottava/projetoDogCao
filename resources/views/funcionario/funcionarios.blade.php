@@ -14,17 +14,18 @@
     <form action="{{ action('App\Http\Controllers\FuncionarioController@pesquisar')}}" method="post">
         <input type="hidden" name="_token" value="{{{ csrf_token() }}}">
         <div class="form-row">
-            <div class="col-6">
+            <div class="col-4">
                 <input type="text" class="form-control" placeholder="Digite o nome que deseja buscar" name="nome" id="">
             </div>
-            <div class="col-6">
+            <div class="col-8">
                 <button type="submit" class="btn btn-primary"> <i class="fas fa-search"></i> Buscar</button>
                     <a href="{{ url('/funcionario/cadastrar') }}" class="btn btn-success"> <i class="fas fa-plus-circle"></i> Cadastrar Funcionário</a>
             </div></div>
     </form><br>
 
-    <table class="table table-borderless">
-        <thead>
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
             <tr>
             <th scope="col">#</th>
             <th scope="col">Nome</th>
@@ -32,6 +33,8 @@
             <th scope="col">Salário</th>
             <th scope="col">Telefone</th>
             <th scope="col">Email</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
         </tr>
     </thead>
     <tbody>
@@ -51,6 +54,6 @@
         @endforeach
 
     </table>
-
+    </div>
     @endsection
 

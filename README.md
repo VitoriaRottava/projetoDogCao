@@ -1,10 +1,10 @@
 falta:
 
-• eloquent
+• conferir tudo
 
-• pedir se todos os registros tem q ser pelo seeder
+• SEEDERRRRRRRRRRRRR
 
-• ver sobre a autenticação dos selects, aquela parada de 2 option value
+• video.
 
 conceitos:
 
@@ -12,11 +12,11 @@ conceitos:
 
 • Model + Migration; :heavy_check_mark:
 
-• Eloquent; 
+• Eloquent; :heavy_check_mark:
 
 • Seeder (Inserir dados de testes usados durante o desenvolvimento da aplicação);
 
-• Session (Sistema de Login, realizando o controle de sessão das páginas);
+• Session (Sistema de Login, realizando o controle de sessão das páginas); :heavy_check_mark:
 
 • Associar chave estrangeiras com tabelas em formulários e exibir nos grids (Tabela HTML); :heavy_check_mark:
 

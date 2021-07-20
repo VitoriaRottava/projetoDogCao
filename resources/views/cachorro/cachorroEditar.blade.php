@@ -73,6 +73,8 @@
         </select>
         <br></div></div>
         <button type="submit" class="btn btn-success  btn-block"> <i class="fas fa-save"></i>   Salvar</button>
+        <a href="/cachorro" class="btn btn-primary btn-block"> <i class="fas fa-arrow-left"></i> Voltar</a>
+
 
     </form>
 @endsection

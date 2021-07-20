@@ -18,9 +18,9 @@
         <br>Funcionário responsável: {{$agendas->funcionario->nome}}
         <br>Cachorro: {{$agendas->cachorro->nome}}
         <br>Produto que será usado: {{$agendas->produto->nome}}
-        <br>Dono do cachorro: {{$agendas->dono->nome}}</p>
-        <br>Preço: {{$agendas->preco}}</p>
-        <br>Informações adicionais: {{$agendas->info}}</p>        
+        <br>Dono do cachorro: {{$agendas->dono->nome}}
+        <br>Preço: {{$agendas->preco}}
+        <br>Informações adicionais: {{$agendas->info}}</p>
         <hr>
     @endforeach
 </body>

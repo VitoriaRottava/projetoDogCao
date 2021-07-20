@@ -43,6 +43,8 @@
         </div></div>
 
         <button type="submit" class="btn btn-success  btn-block"> <i class="fas fa-save"></i>   Salvar</button>
+        <a href="/produto" class="btn btn-primary btn-block"> <i class="fas fa-arrow-left"></i> Voltar</a>
+
 
     </form>
 @endsection
