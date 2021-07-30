@@ -44,8 +44,8 @@
             <td>{{$item->id}}</td>
             <td>{{$item->nome}}</td>
             <td>{{$item->cpf}}</td>
-            <td>{{$item->telefone}}</td>
-            <td>{{$item->email}}</td>
+            <td><a href='tel:"{{$item->telefone}}"'>{{$item->telefone}}</a></td>
+            <td><a href='mailto:"{{$item->email}}"'>{{$item->email}}</a></td>
             <td>{{$item->endereco}}</td>
 
             <td><a href="{{ action('App\Http\Controllers\DonoController@editar',$item->id )}}" style='color:orange;' ><i class='fas fa-edit'></i>   Editar</a> </td>

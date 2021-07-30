@@ -44,8 +44,8 @@
             <td>{{$item->nome}}</td>
             <td>{{$item->cpf}}</td>
             <td>{{$item->salario}}</td>
-            <td>{{$item->telefone}}</td>
-            <td>{{$item->email}}</td>
+            <td><a href='tel:"{{$item->telefone}}"'>{{$item->telefone}}</a></td>
+            <td><a href='mailto:"{{$item->email}}"'>{{$item->email}}</a></td>
 
             <td><a href="{{ action('App\Http\Controllers\FuncionarioController@editar',$item->id )}}" style='color:orange;' ><i class='fas fa-edit'></i>   Editar</a> </td>
             <td><a href="{{ action('App\Http\Controllers\FuncionarioController@deletar',$item->id )}}"style='color:red;'><i class='fas fa-trash'></i>   Deletar</a> </td>

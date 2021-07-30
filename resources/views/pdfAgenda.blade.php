@@ -13,7 +13,7 @@
     @foreach ($agenda as $agendas)<br>
         <p><strong>ID: {{$agendas->id}}</strong>
         <br>Título do atendimento: {{$agendas->titulo}}
-        <br>Dia: {{$agendas->dia = date('d/m/Y')}}
+        <br>Dia: {{ date( 'd/m/Y' , strtotime($agendas->dia))}}
         <br>Horário: {{$agendas->hora}}
         <br>Funcionário responsável: {{$agendas->funcionario->nome}}
         <br>Cachorro: {{$agendas->cachorro->nome}}

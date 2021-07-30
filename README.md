@@ -2,8 +2,6 @@ falta:
 
 • conferir tudo
 
-• SEEDERRRRRRRRRRRRR
-
 • video.
 
 conceitos:
@@ -14,7 +12,7 @@ conceitos:
 
 • Eloquent; :heavy_check_mark:
 
-• Seeder (Inserir dados de testes usados durante o desenvolvimento da aplicação);
+• Seeder (Inserir dados de testes usados durante o desenvolvimento da aplicação); :heavy_check_mark:
 
 • Session (Sistema de Login, realizando o controle de sessão das páginas); :heavy_check_mark:
 

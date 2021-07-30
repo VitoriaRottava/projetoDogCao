@@ -40,7 +40,7 @@
         <select name="id_funcionario" class="form-control">
             <option value="Selecione uma opção" disabled selected >Selecione uma opção</option>
             @foreach ($funcionarios as $item)
-            <option value="{{$item->id}}"> {{$item->nome}} </option>
+            <option value="{{$item->id}}" @if($item->id== old('id_funcionario'))  selected="selected" @endif> {{$item->nome}} </option>
             @endforeach
         </select>
     <br></div>
@@ -49,7 +49,7 @@
         <select name="id_cachorro" class="form-control">
             <option value="Selecione uma opção" disabled selected >Selecione uma opção</option>
             @foreach ($cachorros as $item)
-            <option value="{{$item->id}}"> {{$item->nome}} </option>
+            <option value="{{$item->id}}" @if($item->id== old('id_cachorro'))  selected="selected" @endif> {{$item->nome}} </option>
             @endforeach
         </select>
     <br></div></div>
@@ -59,7 +59,7 @@
         <select name="id_produto" class="form-control">
             <option value="Selecione uma opção" disabled selected >Selecione uma opção</option>
             @foreach ($produtos as $item)
-            <option value="{{$item->id}}"> {{$item->nome}} </option>
+            <option value="{{$item->id}}" @if($item->id== old('id_produto'))  selected="selected" @endif> {{$item->nome}} </option>
             @endforeach
         </select>
     <br></div>
@@ -68,7 +68,7 @@
         <select name="id_dono" class="form-control">
             <option value="Selecione uma opção" disabled selected >Selecione uma opção</option>
             @foreach ($donos as $item)
-            <option value="{{$item->id}}"> {{$item->nome}} </option>
+            <option value="{{$item->id}}" @if($item->id== old('id_dono'))  selected="selected" @endif> {{$item->nome}} </option>
             @endforeach
         </select>
     <br></div></div>
